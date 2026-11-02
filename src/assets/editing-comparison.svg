@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 850" role="img" aria-labelledby="title desc">
+  <title id="title">Original illustrated rooftop scene</title>
+  <desc id="desc">A person looks across a city from a rooftop at dusk, with a distant sun and layered skyline.</desc>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1">
+      <stop stop-color="#b5c5ce"/>
+      <stop offset=".52" stop-color="#d7b6a0"/>
+      <stop offset="1" stop-color="#607c8b"/>
+    </linearGradient>
+    <linearGradient id="haze" x2="0" y2="1">
+      <stop stop-color="#e4c4a9" stop-opacity=".04"/>
+      <stop offset="1" stop-color="#e4c4a9" stop-opacity=".55"/>
+    </linearGradient>
+    <linearGradient id="roof" x2="0" y2="1">
+      <stop stop-color="#34404a"/>
+      <stop offset="1" stop-color="#11191f"/>
+    </linearGradient>
+    <radialGradient id="sun">
+      <stop stop-color="#f3d9b2" stop-opacity=".88"/>
+      <stop offset="1" stop-color="#f3d9b2" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="850" fill="url(#sky)"/>
+  <circle cx="1110" cy="320" r="210" fill="url(#sun)"/>
+  <circle cx="1110" cy="320" r="62" fill="#f0d7b5" opacity=".8"/>
+  <path d="M0 415 110 390 205 410 306 365 389 397 500 350 585 390 690 335 785 380 900 341 1010 388 1102 350 1210 390 1312 346 1418 384 1510 350 1600 377v220H0Z" fill="#627681" opacity=".62"/>
+  <path d="M0 480h105v-91h59v91h54v-135h83v135h69v-79h68v79h49v-163h112v163h66v-112h63v112h72v-174h101v174h52v-91h71v91h67v-142h95v142h74v-83h65v83h87v-124h83v124h69v-94h69v94h60v290H0Z" fill="#34444e" opacity=".85"/>
+  <path d="M0 542h73v-58h41v58h89v-90h78v90h52v-62h52v62h90v-109h96v109h66v-72h61v72h79v-119h89v119h62v-79h55v79h83v-94h97v94h61v-55h68v55h79v-102h92v102h83v-61h68v61h69v308H0Z" fill="#24343e"/>
+  <g fill="#d7c6a9" opacity=".42">
+    <path d="M95 511h9v16h-9zm174-29h10v19h-10zm247 16h10v19h-10zm283-3h10v18h-10zm230-20h10v18h-10zm251 30h10v18h-10zm193-12h10v18h-10z"/>
+    <path d="M344 510h9v17h-9zm401-31h10v18h-10zm348 33h10v18h-10zm298-37h9v18h-9z"/>
+  </g>
+  <rect y="470" width="1600" height="150" fill="url(#haze)"/>
+  <path d="M0 650 345 590h875l380 75v185H0Z" fill="url(#roof)"/>
+  <path d="m0 665 383-61m1217 65-383-68" fill="none" stroke="#b5c5ce" stroke-opacity=".22" stroke-width="3"/>
+  <path d="M190 850 563 610m846 240-372-240" fill="none" stroke="#c6d0d1" stroke-opacity=".12" stroke-width="3"/>
+  <path d="M590 611h420" fill="none" stroke="#e9c79e" stroke-opacity=".55" stroke-width="3"/>
+  <g transform="translate(786 430)">
+    <path d="M20 85c-1-22 4-42 17-52 10-8 26-8 36 0 12 10 17 30 16 52l14 92-8 59H13l-8-59Z" fill="#18222b"/>
+    <circle cx="55" cy="16" r="20" fill="#202b33"/>
+    <path d="m27 78-36 71 11 8 52-56m28-22 39 62-10 8-54-49" fill="#1b252e"/>
+    <path d="m42 227-24 112h20l34-101m12-11 24 112h-21L53 240" fill="#141c23"/>
+    <path d="M25 92h73" stroke="#7c9cac" stroke-opacity=".17" stroke-width="4"/>
+  </g>
+  <rect width="1600" height="850" fill="none" stroke="#f2e7d4" stroke-opacity=".18" stroke-width="2"/>
+</svg>

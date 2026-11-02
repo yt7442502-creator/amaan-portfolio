@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#080b10" />
+    <meta name="description" content="Amaan is a professional video editor creating retention-focused anime, gaming, commentary and documentary edits." />
+    <title>Amaan — Video Editor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="site-grain" aria-hidden="true"></div>
+    <canvas class="world-canvas" id="world-canvas" aria-hidden="true"></canvas>
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"></div>
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a class="wordmark" href="#hero" aria-label="Amaan home">A<span>.</span></a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#work">Work</a><a href="#services">Services</a><a href="#about">About</a><a href="#faq">FAQ</a>
+        <a class="nav-contact" href="#contact">Start a project <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero" id="hero" aria-labelledby="hero-title">
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="hero-copy">
+          <p class="eyebrow hero-eyebrow"><span class="status-dot"></span> Available for Projects <span class="eyebrow-rule"></span> THE CREATIVE EXPERIENCE</p>
+          <h1 id="hero-title" class="hero-title"><span class="hero-name">AMAAN</span><span class="hero-role">Video Editor<span class="blue-period">.</span></span></h1>
+          <p class="hero-tagline">Editing videos that keep<br class="desktop-break" /> viewers watching.</p>
+          <div class="hero-actions"><a class="button button-primary" href="#work">View My Work <span aria-hidden="true">↘</span></a><a class="button button-quiet" href="#contact">Let's Work Together <span aria-hidden="true">↗</span></a></div>
+        </div>
+        <div class="hero-art" aria-label="A floating 3D video editing workstation">
+          <div class="art-label art-label-top"><span>EDITOR'S DESK</span><span>01 / 04</span></div>
+          <div class="art-label art-label-bottom"><span>SEQUENCE_001</span><span class="live-meter"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></div>
+            <button class="pc-enter-hotspot" id="open-pc-experience" type="button" aria-haspopup="dialog" aria-controls="pc-experience-dialog" aria-label="Open the interactive 3D workstation"><span>OPEN 3D WORKSTATION <b aria-hidden="true">↗</b></span></button>
+          <div class="art-crosshair" aria-hidden="true">+</div>
+        </div>
+        <div class="hero-foot"><span>01 — 12</span><span class="scroll-cue"><span class="scroll-cue-line"></span> SCROLL TO EXPLORE</span><span>INDEPENDENT VIDEO EDITOR</span></div>
+      </section>
+
+      <section class="ticker" aria-label="Editing specialties"><div class="ticker-track"><span>RETENTION FIRST</span><b>✳</b><span>STORY IN EVERY FRAME</span><b>✳</b><span>BUILT FOR THE WATCH</span><b>✳</b><span>RETENTION FIRST</span><b>✳</b><span>STORY IN EVERY FRAME</span><b>✳</b><span>BUILT FOR THE WATCH</span><b>✳</b></div></section>
+
+      <section class="motion-section section-pad" id="motion">
+        <div class="section-wrap">
+          <div class="section-heading motion-heading"><div><p class="eyebrow">02 / EDITING IN MOTION</p><h2 class="display-title">Every frame<br />has a <span>purpose.</span></h2></div><p class="section-intro">A good edit isn't just what you see. It's the rhythm, the pause, the moment that makes you stay.</p></div>
+          <div class="timeline-window" aria-label="Animated video editing timeline">
+            <div class="timeline-top"><span>SEQUENCE_001_FINAL</span><span>24 FPS <i>•</i> 00:01:24:18</span></div>
+            <div class="timeline-ruler"><span>00:00</span><span>00:10</span><span>00:20</span><span>00:30</span><span>00:40</span><span>00:50</span><span>01:00</span></div>
+            <div class="timeline-row"><span class="track-name">V1</span><div class="track-lane"><div class="clip clip-blue"><i></i> OPENING HOOK</div><div class="clip clip-cyan"><i></i> STORY / A-ROLL</div><div class="clip clip-orange"><i></i> THE PAYOFF</div><div class="clip clip-blue clip-tail"><i></i> OUTRO</div></div></div>
+            <div class="timeline-row"><span class="track-name">V2</span><div class="track-lane"><div class="clip clip-image"><i></i> CUTAWAY</div><div class="clip clip-image clip-short"><i></i> B-ROLL</div><div class="clip clip-cyan clip-short"><i></i> TEXT</div><div class="clip clip-image"><i></i> DETAIL</div></div></div>
+            <div class="timeline-row audio-row"><span class="track-name">A1</span><div class="track-lane"><div class="waveform" aria-hidden="true"></div></div></div>
+            <div class="timeline-playhead"><span></span></div>
+          </div>
+          <div class="motion-caption"><span>01 — HOOK</span><span>02 — BUILD</span><span>03 — PAYOFF</span><span>MADE TO KEEP YOU WATCHING <b>↗</b></span></div>
+        </div>
+      </section>
+
+      <section class="exploded-section" id="exploded" aria-labelledby="exploded-title">
+        <div class="exploded-sticky section-wrap">
+          <div class="exploded-copy">
+            <p class="eyebrow">03 / INSIDE THE MACHINE</p>
+            <h2 class="display-title" id="exploded-title">Built for<br /><span>the frame.</span></h2>
+            <p class="section-intro">A closer look at the workstation behind every cut. Scroll to separate the system into its essential parts, then bring it back together.</p>
+            <div class="component-readout"><span class="readout-dot"></span><span id="component-readout">SYSTEM ASSEMBLED</span><span class="readout-line"></span><span>PC / 01</span></div>
+          </div>
+          <div class="exploded-hint"><span>SCROLL TO INSPECT</span><span>↓</span></div>
+        </div>
+      </section>
+
+      <section class="work-section section-pad" id="work">
+        <div class="section-wrap work-wrap">
+          <div class="section-heading work-heading"><div><p class="eyebrow">04 / SELECTED WORK</p><h2 class="display-title">Featured <span>work.</span></h2></div><p class="section-intro">A selection of edits across different content styles — from anime to gaming, comedy to commentary.</p></div>
+          <div class="work-viewport"><div class="work-track" id="work-track" aria-label="Portfolio projects"></div></div>
+          <div class="work-progress"><span>DRAG / SCROLL TO EXPLORE</span><div class="progress-line"><i></i></div><span>08 PROJECTS</span></div>
+        </div>
+      </section>
+
+      <section class="numbers-band" aria-label="Portfolio statistics"><div class="number-item"><strong>100<span>+</span></strong><span>Projects Completed</span></div><div class="number-item"><strong>315K<span>+</span></strong><span>Total Views Generated</span></div><div class="number-item"><strong>1.19K<span>+</span></strong><span>Channel Subscribers</span></div><div class="number-item"><strong>9<span>+</span></strong><span>Content Categories</span></div><div class="number-item"><strong>100<span>%</span></strong><span>Revision Satisfaction</span></div></section>
+
+      <section class="comparison-section section-pad" id="beforeafter">
+        <div class="section-wrap">
+          <div class="section-heading"><div><p class="eyebrow">05 / TRANSFORMATION</p><h2 class="display-title">Before <span>the cut.</span><br />After <span>the story.</span></h2></div><p class="section-intro">Drag the handle to see the difference professional editing makes.</p></div>
+          <div class="compare-wrap" id="compare-wrap">
+            <div class="compare-after"><div class="compare-image compare-image-after"><img class="compare-scene" alt="Original illustrated rooftop scene after cinematic color grading" /><span class="frame-corner top-left"></span><span class="frame-corner top-right"></span><span class="frame-corner bottom-left"></span><span class="frame-corner bottom-right"></span><div class="compare-copy"><span class="compare-index">A / 02</span><strong>After <span>✦</span> Professional Edit</strong><small>Cinematic grade · Sound design · Precision pacing</small><em>↑ Retention · ↑ Watch Time · ↑ Engagement</em></div><span class="compare-label">AFTER</span></div></div>
+            <div class="compare-before" id="compare-before"><div class="compare-image compare-image-before"><img class="compare-scene" alt="The same original illustrated rooftop scene before color grading" /><div class="compare-copy"><span class="compare-index">B / 01</span><strong>Before · Raw Footage</strong><small>Unedited · Flat color · No structure</small></div><span class="compare-label">BEFORE</span></div></div>
+            <div class="compare-divider" id="compare-divider"><span>↔</span></div>
+            <input class="compare-range" id="compare-range" type="range" min="5" max="95" value="50" aria-label="Drag to compare before and after editing" />
+          </div>
+          <p class="compare-hint">← DRAG TO COMPARE →</p>
+        </div>
+      </section>
+
+      <section class="services-section section-pad" id="services">
+        <div class="section-wrap">
+          <div class="section-heading"><div><p class="eyebrow">06 / SERVICES</p><h2 class="display-title">The right cut<br />for <span>your story.</span></h2></div><p class="section-intro">Professional editing across every content category — built for engagement and retention.</p></div>
+          <div class="services-grid">
+            <article class="service-card"><span class="service-number">01</span><span class="service-icon">◈</span><h3>Anime Video Editing</h3><p>Cinematic anime edits and AMVs with beat-synced cuts, smooth transitions, and effects tuned for maximum impact.</p></article>
+            <article class="service-card"><span class="service-number">02</span><span class="service-icon">▣</span><h3>Gaming Video Editing</h3><p>Highlight reels, let's plays, and gaming montages with energetic pacing and dynamic visual effects.</p></article>
+            <article class="service-card"><span class="service-number">03</span><span class="service-icon">◉</span><h3>Commentary Editing</h3><p>Tight, engaging edits for commentary creators — clean cuts, captions, and B-roll that support your narrative.</p></article>
+            <article class="service-card"><span class="service-number">04</span><span class="service-icon">▤</span><h3>Documentary Editing</h3><p>Story-driven editing with thoughtful pacing, music, and color grading that serves the narrative.</p></article>
+            <article class="service-card"><span class="service-number">05</span><span class="service-icon">✳</span><h3>Funny / Entertainment</h3><p>Comedy-first editing with precise timing, sound effects, and cuts that land the punchline every time.</p></article>
+            <article class="service-card"><span class="service-number">06</span><span class="service-icon">↗</span><h3>YouTube Shorts</h3><p>Scroll-stopping vertical content with hooks in the first second and pacing built to maximize watch time.</p></article>
+            <article class="service-card"><span class="service-number">07</span><span class="service-icon">▰</span><h3>Long-form Videos</h3><p>Full video production — structure, pacing, color, sound design, and retention-optimized editing throughout.</p></article>
+            <article class="service-card"><span class="service-number">08</span><span class="service-icon">⌘</span><h3>Motion Graphics</h3><p>Custom animations, lower thirds, intros, and After Effects visuals that elevate your production quality.</p></article>
+            <article class="service-card"><span class="service-number">09</span><span class="service-icon">▧</span><h3>Thumbnail Design</h3><p>Click-magnet thumbnails with psychology-driven layout, bold typography, and contrast that drives CTR.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills-section section-pad" id="skills">
+        <div class="section-wrap"><div class="section-heading"><div><p class="eyebrow">07 / THE TOOLKIT</p><h2 class="display-title">Tools of <span>the trade.</span></h2></div><p class="section-intro">The right tool for the right frame.</p></div>
+          <div class="skills-grid"><article class="skill-card"><div class="skill-card-top"><span>01 / NLE</span><span>95%</span></div><div class="skill-mark premiere-mark">Pr</div><h3>Premiere Pro</h3><p>Primary NLE</p><div class="skill-track"><i style="--skill:95%"></i></div></article><article class="skill-card"><div class="skill-card-top"><span>02 / MOTION</span><span>82%</span></div><div class="skill-mark ae-mark">Ae</div><h3>After Effects</h3><p>Motion & VFX</p><div class="skill-track"><i style="--skill:82%"></i></div></article><article class="skill-card"><div class="skill-card-top"><span>03 / DESIGN</span><span>88%</span></div><div class="skill-mark ps-mark">Ps</div><h3>Photoshop</h3><p>Thumbnails & Design</p><div class="skill-track"><i style="--skill:88%"></i></div></article><article class="skill-card"><div class="skill-card-top"><span>04 / SHORTS</span><span>93%</span></div><div class="skill-mark capcut-mark">Cc</div><h3>CapCut</h3><p>Shorts & Mobile</p><div class="skill-track"><i style="--skill:93%"></i></div></article></div>
+        </div>
+      </section>
+
+      <section class="channel-section section-pad" id="channel">
+        <div class="section-wrap channel-layout">
+          <div class="channel-copy"><p class="eyebrow">08 / CREATOR PERSPECTIVE</p><h2 class="display-title">I know what<br /><span>keeps you watching.</span></h2><p>Running my own YouTube channel gives me first-hand experience with audience retention, pacing, hooks, watch time, and content strategy. This helps me make editing decisions based on <strong>viewer behavior</strong>, not just visual effects.</p><p>I'm not just an editor — I'm a creator who understands what keeps people watching and what makes them click away. That perspective is built into every edit I deliver.</p>
+            <div class="channel-points"><span>↗ Audience Retention</span><span>↗ Hook Creation</span><span>↗ Pacing & Rhythm</span><span>↗ Storytelling</span><span>↗ Watch Time Strategy</span><span>↗ Viewer Engagement</span></div>
+          </div>
+          <a class="channel-panel" href="https://www.youtube.com/@LALLANTAAPANIME" target="_blank" rel="noreferrer"><div class="channel-panel-top"><span class="channel-play">▶</span><span>CREATOR CHANNEL <b>↗</b></span></div><div class="channel-name">Lallantaap<br /><span>Anime</span></div><div class="channel-handle">@LALLANTAAPANIME</div><div class="channel-metrics"><div><strong>1.19K+</strong><span>Subscribers</span></div><div><strong>315K+</strong><span>Total Views</span></div><div><strong>Jun '25</strong><span>Started Editing</span></div><div><strong>100+</strong><span>Projects Done</span></div></div></a>
+        </div>
+      </section>
+
+      <section class="about-section section-pad" id="about">
+        <div class="section-wrap about-layout">
+          <div class="about-art"><div class="about-art-grid"></div><span class="about-mark">A<span>.</span></span><span class="about-art-caption">FRAME / 001<br />NO STOCK IMAGE<br />JUST THE WORK</span><div class="about-float about-float-one"><strong>315K+</strong><span>Views Generated</span></div><div class="about-float about-float-two"><strong>100+</strong><span>Projects Done</span></div></div>
+          <div class="about-copy"><p class="eyebrow">09 / ABOUT ME</p><h2 class="display-title">The editor<br />behind <span>the frame.</span></h2><p>Hey, I'm <strong>Amaan</strong> — a professional video editor who specializes in creating engaging content for YouTube and social media. I don't just cut footage; I craft viewing experiences.</p><p>My editing experience spans across <strong>anime, gaming, documentary, commentary, and comedy content</strong> — which means I understand the distinct rhythm and audience expectations of each format.</p><p>Because I run my own YouTube channel, I understand content from <strong>both sides of the camera</strong> — as an editor and as a creator who watches analytics, tests hooks, and obsesses over retention graphs.</p><div class="about-tags"><span>Retention-Focused</span><span>Hook Specialist</span><span>Fast Turnaround</span><span>Detail-Oriented</span><span>Anime Creator</span><span>Data-Driven</span></div></div>
+        </div>
+      </section>
+
+      <section class="process-section section-pad" id="process">
+        <div class="section-wrap"><div class="section-heading"><div><p class="eyebrow">10 / PROCESS</p><h2 class="display-title">From brief<br />to <span>premiere.</span></h2></div><p class="section-intro">A clean, simple workflow built for quality and fast delivery.</p></div><div class="process-list"><article><span>01</span><div><h3>Brief</h3><p>You share your vision, references, and goals for the video.</p></div><b>↘</b></article><article><span>02</span><div><h3>Raw Files</h3><p>Send me your footage, audio, and any assets needed.</p></div><b>↘</b></article><article><span>03</span><div><h3>First Cut</h3><p>I deliver a polished cut with effects, color, and sound design.</p></div><b>↘</b></article><article><span>04</span><div><h3>Revisions</h3><p>We refine together until the video is exactly right.</p></div><b>↘</b></article><article><span>05</span><div><h3>Delivery</h3><p>Final export in your format — ready to upload and grow.</p></div><b>✓</b></article></div></div>
+      </section>
+
+      <section class="faq-section section-pad" id="faq">
+        <div class="section-wrap faq-layout"><div><p class="eyebrow">11 / FAQ</p><h2 class="display-title">Common<br /><span>questions.</span></h2><p class="section-intro">The details, before we get into the edit.</p></div><div class="faq-list"><details><summary>What types of videos do you edit?<span>+</span></summary><p>I edit anime videos, gaming content, documentary-style videos, commentary, comedy/funny videos, YouTube Shorts, and long-form YouTube content. I also design thumbnails and create motion graphics.</p></details><details><summary>What's your turnaround time?<span>+</span></summary><p>Typically 24 hours for Shorts and 2–4 days for long-form content, depending on complexity. Rush delivery is available on request.</p></details><details><summary>How many revisions do I get?<span>+</span></summary><p>I include 2 free revision rounds with every project. I aim to get the first cut close to what you need so revisions are minimal.</p></details><details><summary>What formats do you deliver in?<span>+</span></summary><p>I deliver in any format you need — MP4 (H.264/H.265), MOV, or ProRes. I export optimized for YouTube, Instagram Reels, or wherever you're publishing.</p></details><details><summary>Do you work with new creators?<span>+</span></summary><p>Absolutely. Whether you have 100 or 100,000 subscribers, I bring the same quality and attention to every project.</p></details><details><summary>Can you match a specific editing style?<span>+</span></summary><p>Yes — just share reference videos and I'll analyze and replicate the pacing, color tone, and overall energy of that style.</p></details></div></div>
+      </section>
+
+      <section class="contact-section section-pad" id="contact">
+        <div class="section-wrap"><div class="section-heading"><div><p class="eyebrow">12 / CONTACT</p><h2 class="display-title">Let's make<br /><span>something worth watching.</span></h2></div><p class="section-intro">Have a project in mind? Fill in the form or reach out directly through any of the channels below.</p></div>
+          <div class="contact-layout"><div class="contact-links"><a href="mailto:ahaan321.kj@gmail.com"><span>EMAIL / 01</span><strong>ahaan321.kj@gmail.com</strong><b>↗</b></a><a href="https://www.youtube.com/@LALLANTAAPANIME" target="_blank" rel="noreferrer"><span>YOUTUBE / 02</span><strong>youtube.com/@LALLANTAAPANIME</strong><b>↗</b></a><a href="https://www.instagram.com/dihhstroy_kr_dunga/" target="_blank" rel="noreferrer"><span>INSTAGRAM / 03</span><strong>@dihhstroy_kr_dunga</strong><b>↗</b></a></div>
+            <form class="contact-form" id="contact-form"><div class="form-row"><label>Your Name<input type="text" name="name" id="fName" placeholder="e.g. Rahul Sharma" required /></label><label>Email<input type="email" name="email" id="fEmail" placeholder="you@email.com" required /></label></div><label>Type of Video<select name="type" id="fType"><option value="">Select a category…</option><option>Anime Video Editing</option><option>Gaming Video Editing</option><option>Documentary Editing</option><option>Commentary Video Editing</option><option>Funny / Entertainment Editing</option><option>YouTube Shorts</option><option>Long-form Video Editing</option><option>Motion Graphics</option><option>Thumbnail Design</option><option>Other</option></select></label><label>Message<textarea name="message" id="fMsg" placeholder="Tell me about your project…" required></textarea></label><button class="button button-primary" type="submit">Send Message <span aria-hidden="true">↗</span></button><p class="form-note" id="form-note" aria-live="polite">This opens your email app; no messages are stored on a server.</p><p class="form-direct">Or email directly at <a href="mailto:ahaan321.kj@gmail.com">ahaan321.kj@gmail.com</a></p></form>
+          </div>
+        </div>
+      </section>
+
+      <section class="final-cta" id="cta"><div class="cta-orbit" aria-hidden="true"></div><div class="cta-content"><p class="eyebrow">13 / READY?</p><h2>Need videos that people<br /><span>actually finish watching?</span></h2><p>Let's turn your ideas into engaging content that keeps viewers watching from start to finish.</p><a class="button button-primary" href="#contact">Contact Me <span aria-hidden="true">↗</span></a></div></section>
+    </main>
+    <footer><a class="wordmark" href="#hero">A<span>.</span></a><span>© 2025 Amaan. All rights reserved.</span><span>Professional Video Editor</span><a class="back-top" href="#hero">BACK TO TOP ↑</a></footer>
+
+    <dialog class="pc-experience-dialog" id="pc-experience-dialog" aria-label="Interactive 3D workstation">
+      <div class="pc-experience-shell">
+        <canvas id="pc-experience-canvas" aria-label="Interactive 3D workstation model"></canvas>
+        <div class="pc-experience-shade" aria-hidden="true"></div>
+        <header class="pc-experience-header">
+          <button class="pc-back-button" id="pc-experience-back" type="button"><span aria-hidden="true">←</span> BACK TO PORTFOLIO</button>
+          <div class="pc-experience-mark"><span>AMAAN / WORKSTATION</span><strong>INTERACTIVE SYSTEM <i>01</i></strong></div>
+          <span class="pc-live-state"><i></i> SYSTEM ONLINE</span>
+        </header>
+        <aside class="pc-component-panel" aria-live="polite" aria-atomic="true">
+          <p class="pc-panel-kicker" id="pc-component-role">COMPONENT EXPLORER</p>
+          <h2 id="pc-component-name">Select a component</h2>
+          <p id="pc-component-description">Orbit around the workstation, then select a component to inspect its role.</p>
+        </aside>
+        <nav class="pc-component-rail" id="pc-component-list" aria-label="Workstation components"></nav>
+        <div class="pc-experience-controls">
+          <button class="pc-control-button pc-explode-button" id="pc-explode" type="button"><span aria-hidden="true">⤢</span> Explode Components</button>
+          <button class="pc-control-button" id="pc-assemble" type="button" disabled><span aria-hidden="true">⤡</span> Assemble PC</button>
+          <button class="pc-control-button pc-reset-view" id="pc-reset-view" type="button"><span aria-hidden="true">↺</span> Reset View</button>
+        </div>
+        <p class="pc-orbit-hint">DRAG TO ORBIT <i>·</i> SCROLL TO ZOOM <i>·</i> TAP A COMPONENT</p>
+        <div class="pc-webgl-fallback" id="pc-webgl-fallback" hidden>
+          <p>3D preview unavailable on this device.</p>
+          <button class="pc-back-button" type="button" data-pc-close>← BACK TO PORTFOLIO</button>
+        </div>
+      </div>
+    </dialog>
+    <dialog class="video-dialog" id="video-dialog" aria-label="Video player"><button class="dialog-close" type="button" aria-label="Close video">×</button><div class="dialog-video" id="dialog-video"></div></dialog>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
